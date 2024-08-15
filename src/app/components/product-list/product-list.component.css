@@ -1,0 +1,14 @@
+.section-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.section-main-products {
+  display: flex;
+}
+
+.section-rigth {
+  padding: 16px;
+}

@@ -1,0 +1,11 @@
+<p>Mi carrito de compras</p>
+
+<app-shop-total></app-shop-total>
+
+@if(products$ | async; as producto ) {
+  @for (item of producto; track $index) {
+    <p>- {{item.description}}</p>
+  }
+} @else {
+  Aún no hay productos en tu carrito.
+}

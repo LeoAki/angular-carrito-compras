@@ -1,0 +1,9 @@
+.article-item {
+  background-color: gray;
+  padding: 16px;
+  border-color: azure;
+}
+
+.article-container {
+  display: flex;
+}

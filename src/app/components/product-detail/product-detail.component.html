@@ -1,0 +1,14 @@
+<article class="article-item">
+  <section class="article-container">
+    <section>
+      <p>Título: {{data()?.title}}</p>
+      <span>Descripción: {{data()?.description}}</span>
+      <br><br><span>Precio: {{data()?.price  | currency: 'S/.'}}</span>
+    </section>
+    <section>
+      <img [src]="data()?.images" width="200px"/>
+    </section>
+  </section>
+  <button mat-flat-button (click)="addShop()">Agregar al carrito</button>
+</article>
+

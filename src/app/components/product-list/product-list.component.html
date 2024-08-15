@@ -1,0 +1,18 @@
+<h2>Listado de productos</h2>
+<section class="section-main-products">
+  <section>
+    @if(produtList$ | async; as producto ) {
+      <section class="section-left">
+        @for (item of producto.products; track $index) {
+          <app-product-detail [data]="item"></app-product-detail>
+        }
+      </section>
+    } @else {
+      No se encontró detalle del producto.
+    }
+
+  </section>
+  <section class="section-rigth">
+    <app-shop></app-shop>
+  </section>
+</section>
